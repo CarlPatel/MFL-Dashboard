@@ -1,7 +1,8 @@
 import "server-only";
 
 import { getCachedMovieScores } from "./movieScores";
-import type { Player, ScoredPlayer, SearchPlayer, VulturePlayer } from "./types";
+import { MOVIE_METADATA, ORIGINAL_MOVIE_ORDER } from "./moviePrices";
+import type { MovieCatalogItem, Player, ScoredPlayer, SearchPlayer, VulturePlayer } from "./types";
 
 const LEADERBOARD_URL =
   "https://www.vulture.com/static/leaderboard/production/cmuec30my000h3b7egrtm2p6h.json";
@@ -157,11 +158,34 @@ export async function getPlayers(usernames: string[]): Promise<{ users: ScoredPl
     if (player) {
       users.push({
         ...player,
-        movies: player.movies.map((title) => ({ title, score: inference.scores.get(title) ?? null })),
+        movies: player.movies.map((title) => ({
+          title,
+          score: inference.scores.get(title) ?? null,
+          posterUrl: MOVIE_METADATA.get(title)?.posterUrl ?? null,
+        })),
       });
     }
     else missing.push(username);
   }
 
   return { users, missing, fetchedAt: leaderboard.fetchedAt };
+}
+
+export async function getMovieCatalog(): Promise<{ movies: MovieCatalogItem[]; fetchedAt: string }> {
+  const leaderboard = await getLeaderboard();
+  const inference = getCachedMovieScores(leaderboard.players, leaderboard.fetchedAt);
+  const movies = ORIGINAL_MOVIE_ORDER.map((movie) => ({
+    title: movie.title,
+    score: inference.scores.get(movie.title) ?? null,
+    price: movie.price,
+    posterUrl: movie.posterUrl,
+  })).sort((left, right) => {
+    if (left.score === null && right.score !== null) return 1;
+    if (left.score !== null && right.score === null) return -1;
+    if (left.score !== right.score) return (right.score ?? 0) - (left.score ?? 0);
+    const leftOrder = MOVIE_METADATA.get(left.title)?.tieBreakOrder ?? Number.MAX_SAFE_INTEGER;
+    const rightOrder = MOVIE_METADATA.get(right.title)?.tieBreakOrder ?? Number.MAX_SAFE_INTEGER;
+    return leftOrder - rightOrder || left.title.localeCompare(right.title);
+  });
+  return { movies, fetchedAt: leaderboard.fetchedAt };
 }

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import Link from "next/link";
 
 import type { ScoredPlayer } from "../lib/types";
 import PlayerCard from "./PlayerCard";
@@ -162,6 +163,7 @@ export default function Dashboard() {
         {refreshing ? "Refreshing leaderboard…" : pullDistance >= 64 ? "Release to refresh" : "Pull to refresh"}
       </div>
       <header className="header">
+        <Link className="view-toggle" href="/movies">Movies</Link>
         <p className="eyebrow">Vulture</p>
         <h1>Movies Fantasy League</h1>
         {fetchedAt && <p className="updated">Leaderboard refreshed {new Date(fetchedAt).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}</p>}

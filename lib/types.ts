@@ -20,8 +20,13 @@ export type SearchPlayer = Pick<Player, "displayName" | "score">;
 export type ScoredMovie = {
   title: string;
   score: number | null;
+  posterUrl: string | null;
 };
 
 export type ScoredPlayer = Omit<Player, "movies"> & {
   movies: ScoredMovie[];
+};
+
+export type MovieCatalogItem = ScoredMovie & {
+  price: number | null;
 };

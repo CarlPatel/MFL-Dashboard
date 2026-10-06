@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import type { ScoredPlayer, SearchPlayer } from "../lib/types";
 
 function pointLabel(score: number) {
@@ -51,7 +52,11 @@ export default function SearchResult({ player, saved, onAdd }: { player: SearchP
               {details.movies.length ? (
                 <ul className="movie-list">
                   {details.movies.map((movie) => (
-                    <li key={movie.title}><span>{movie.title}</span><strong>{movie.score === null ? "—" : pointLabel(movie.score)}</strong></li>
+                    <li key={movie.title}>
+                      {movie.posterUrl ? <Image className="movie-poster movie-poster-small" src={movie.posterUrl} alt="" width={34} height={44} /> : <span className="movie-poster movie-poster-small poster-placeholder" aria-hidden="true" />}
+                      <span>{movie.title}</span>
+                      <strong>{movie.score === null ? "—" : pointLabel(movie.score)}</strong>
+                    </li>
                   ))}
                 </ul>
               ) : <p className="muted">No movies listed.</p>}

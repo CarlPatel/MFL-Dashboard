@@ -1,0 +1,882 @@
+{
+    "movies": [
+        {
+            "id": "recanel2Tndcg8NKk",
+            "Movie": "Dune: Part Three",
+            "Name": "Dune: Part Three",
+            "Context": "Paul Atreides has become the Dune Messiah, but at what cost? Directed by Denis Villeneuve. Starring Timothée Chalamet, Zendaya, Florence Pugh, Anya Taylor-Joy, Jason Momoa, Robert Pattinson. Releases 12/18.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/b87/d7d/8e5a6e5d208b86b830a3b8d3308ba38a2a-dune-3.jpg",
+            "Price": 40
+        },
+        {
+            "id": "recHmtxONxbBYF4uL",
+            "Movie": "Avengers: Doomsday",
+            "Name": "Avengers: Doomsday",
+            "Context": "Worlds collide and the Avengers fight Dr. Doom. Directed by the Russo brothers. Starring Robert Downey Jr., Chris Hemsworth, Pedro Pascal, Florence Pugh, Sebastian Stan, Anthony Mackie, and Patrick Stewart. In theaters 12/18.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/253/829/7b6d6c012e15f4b0560adb5b9cd982bca8-avengers-doomsday.jpg",
+            "Price": 30
+        },
+        {
+            "id": "recMqbDFEHe0zfNCw",
+            "Movie": "The Social Reckoning",
+            "Name": "The Social Reckoning",
+            "Context": "Sequel to 'The Social Network,' following a whistleblower trying to sound the alarm about Facebook. Directed by Aaron Sorkin. Starring Jeremy Strong, Jeremy Allen White, Mikey Madison. In theaters 10/9.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/028/bb9/72682d5d628acddd069d7f52d36bdddc25-social-reckoning.jpg",
+            "Price": 20
+        },
+        {
+            "id": "recfHGodvlnXbeLyq",
+            "Movie": "Werwulf",
+            "Name": "Werwulf",
+            "Context": "Robert Eggers’s deeply historicized take on the werewolf movie. Directed by Robert Eggers. Starring Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe. In theaters 12/25.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/e81/ee3/dc6c6b4c3c1b70abcbf6f33b004723d3f5-werewulf.jpg",
+            "Price": 20
+        },
+        {
+            "id": "recTi1Zitxqvsf90I",
+            "Movie": "All of a Sudden",
+            "Name": "All of a Sudden",
+            "Context": "The director of a Paris nursing home corresponds with a terminally ill Japanese playwright. Directed by Ryusuke Hamaguchi. Starring Virginie Efira and Tao Okamoto. Releases 11/25.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/7cf/515/931fa91338e14052fbb53689edd9affb8b-all-sudden.jpg",
+            "Price": 20
+        },
+        {
+            "id": "recUs3lx4XnaFAi6j",
+            "Movie": "Wild Horse Nine",
+            "Name": "Wild Horse Nine",
+            "Context": "CIA agents embed in Easter Island, ahead of the 1973 Chilean coup. Directed by Martin McDonagh. Starring Sam Rockwell, John Malkovich, Steve Buscemi, Tom Waits, Parker Posey. In theaters 11/6.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/d78/030/f7b2ebd65cf79f153fc6ebb5b90bcab1ce-wild-horse-9.jpg",
+            "Price": 20
+        },
+        {
+            "id": "recZ7Cfs6azgBiL6a",
+            "Movie": "Fjord",
+            "Name": "Fjord",
+            "Context": "A Romanian family living in Norway encounters hostility in the local judicial system. Directed by Cristian Mungiu. Starring Renate Reinsve and Sebastian Stan. In theaters 10/9.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/485/338/0810a7c934c0ba5cd7c2e16ede59a7977a-fjord.jpg",
+            "Price": 20
+        },
+        {
+            "id": "rec2JFYxb3GRlyEHb",
+            "Movie": "Behemoth!",
+            "Name": "Behemoth!",
+            "Context": "A touring cellist returns home to L.A. after 20 years on the road. Directed by Tony Gilroy. Starring Pedro Pascal, Olivia Wilde, Will Arnett. In theaters 12/4.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/120/a79/7b9c0498cc0f1a8c9f35dfc39ad55604c9-behemoth.jpg",
+            "Price": 20
+        },
+        {
+            "id": "rec9TYAAdbpPmN1aI",
+            "Movie": "The Debut",
+            "Name": "The Debut",
+            "Context": "The director and star of a community-theater production enter a folie à deux so that the show may go on. Directed by Jesse Eisenberg. Starring Julianne Moore and Paul Giamatti. Releaes 12/11.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/20a/766/9e913e06885c57dcfc516fb7b9cfc6258e-debut.jpg",
+            "Price": 20
+        },
+        {
+            "id": "reccwVUMnronWuaen",
+            "Movie": "La Bola Negra",
+            "Name": "La Bola Negra",
+            "Context": "Three vignettes explores what it means to be gay in three different eras of history. Directed by Javier Ambrossi and Javier Calvo. Starring Guitarricadelafuente, Miguel Bernardeau, Carlos González, Penélope Cruz, Glenn Close. Limited release 11/6.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/3f4/6e4/9cfba2f82da203adc686e238a7716a71bc-bola-negra.jpg",
+            "Price": 20
+        },
+        {
+            "id": "recdx0dLrrdtEFncZ",
+            "Movie": "Artificial",
+            "Name": "Artificial",
+            "Context": "The controversial biopic of OpenAI's Sam Altman. Directed by Luca Guadagnino. Starring Andrew Garflield and Monica Barbaro. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/f54/7d6/de5d158e051ee7f9f270f87239e6550bfe-artificial.jpg",
+            "Price": 15
+        },
+        {
+            "id": "rechFSfZUFDpe7fwU",
+            "Movie": "Elsinore",
+            "Name": "Elsinore",
+            "Context": "Actor Ian Charleson plays Hamlet while dying of AIDS. Directed by Simon Stone. Starring Andrew Scott and Olivia Colman. In theaters 11/20.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/535/4c5/52be90884e21d46edf70ef9a213e6dd2eb-elsinore.jpg",
+            "Price": 15
+        },
+        {
+            "id": "recsWGJPpQGrYbqGK",
+            "Movie": "Godzilla Minus Zero",
+            "Name": "Godzilla Minus Zero",
+            "Context": "Two years after suriving an encounter with Godzilla, the Shikishima family faces an all-new disaster. Directed by Takashi Yamazaki. Starring Ryûnosuke Kamiki, Minami Hamabe, Miou Tanaka. In theaters 11/6.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/358/1e5/ee6066134a68d95234a71c513fcf35cd22-minus-zero.jpg",
+            "Price": 15
+        },
+        {
+            "id": "rec2onGOekhuk52oG",
+            "Movie": "Ink",
+            "Name": "Ink",
+            "Context": "Biopic about Rupert Murdoch's rise to the top of the tabloids. Directed by Danny Boyle. Starring Jack O'Connell and Guy Pearce. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/e96/b7d/eeaa513d3599bfd176afc8203278a1e981-ink--.jpg",
+            "Price": 15
+        },
+        {
+            "id": "rec3lPTSn56oR0Wcp",
+            "Movie": "The Further Misadventures of Cliff Booth",
+            "Name": "The Further Misadventures of Cliff Booth",
+            "Context": "After the events of 'Once Upon a Time in Hollywood,' Cliff Booth has become a studio fixer. Directed by David Fincher. Starring Brad Pitt, Elizabeth Debicki, Timothy Olyphant. In IMAX 11/25.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/78a/489/485d61118f7cdba7b59092b80e91bf2fdb-cliff-booth.jpg",
+            "Price": 15
+        },
+        {
+            "id": "recEVqmLeHZ1cXYti",
+            "Movie": "Clayface",
+            "Name": "Clayface",
+            "Context": "Origin story of Batman villain Clayface. Directed by James Watkins. Starring Tom Rhys Harries, Naomi Ackie, Max Minghella, Eddie Marsan. Releases 10/23.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/135/cc5/ab2094b86a9ba98e7c67906a89b025c205-clayface.jpg",
+            "Price": 10
+        },
+        {
+            "id": "recEZx0HPE5Z8aDIY",
+            "Movie": "Possible Love",
+            "Name": "Possible Love",
+            "Context": "Two couples with very different lives intersect and destabilize each other. Directed by Lee Chang-dong. Starring Cho Yeo-jeong, Zo In-sung, Jeon Do-yeon. Releases 10/23.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/4a7/a1c/e558904be6bb9d550bc7ec9c2cd80a7286-possible-love.jpg",
+            "Price": 10
+        },
+        {
+            "id": "recHxoShX0VZMmBUa",
+            "Movie": "Paper Tiger",
+            "Name": "Paper Tiger",
+            "Context": "Two brothers go into business together but run up against the Russian mob. Directed by James Gray. Starring Adam Driver, Scarlett Johansson, Miles Teller. In theaters 11/13.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/1c3/37b/c49a77116df6138f019ca3799d848ba14b-paper-tiger.jpg",
+            "Price": 10
+        },
+        {
+            "id": "recLz8ZVoUkRhdQwp",
+            "Movie": "Fatherland",
+            "Name": "Fatherland",
+            "Context": "Thomas Mann goes on a road trip with his daughter through Cold War Germany. Directed by Pawel Pawlikowski. Starring Sandra Hüller, Hanns Zischler, August Diehl. Releases 10/23.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/838/da4/48c3b0fab6aa5e6664890ec786dae49334-fatherland.jpg",
+            "Price": 10
+        },
+        {
+            "id": "rececePooasncmIYY",
+            "Movie": "Ebenezer: A Christmas Carol",
+            "Name": "Ebenezer: A Christmas Carol",
+            "Context": "A prequel to 'A Christmas Carol,' a story that devotes one-third of its time to the character's origin. Directed by Ti West. Starring Johnny Depp. In theaters 11/13.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/bc9/461/df1d330bc1bf0c6643f8263a7757323e33-ebenezer.jpg",
+            "Price": 10
+        },
+        {
+            "id": "recnYnFKDODD49fZo",
+            "Movie": "Focker-in-Law",
+            "Name": "Focker-in-Law",
+            "Context": "Little Focker Henry is all grown up and brings home Ariana Grande to meet the parents. Directed by John Hamburg. Starring Ben Stiller, Robert De Niro, Ariana Grande. In theaters 11/25.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/a02/7dd/a2e35af84a6fc53bf2f5bf18c12b931883-focker-in-law.jpg",
+            "Price": 10
+        },
+        {
+            "id": "recyAHEOfyFQpv3KI",
+            "Movie": "Hexed",
+            "Name": "Hexed",
+            "Context": "A girl and her type-A mother discover that her quirks may actually be magical powers. Directed by Jason Hand and Josie Trinidad. Voiced by Hailee Steinfeld and Rashida Jones. In theaters 11/25.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/ab1/ba8/f9a4ca00b52f36268498f5ee52fe91f299-hexed.jpg",
+            "Price": 10
+        },
+        {
+            "id": "recBf8gVBHmIgwYj4",
+            "Movie": "The Hunger Games: Sunrise on the Reaping",
+            "Name": "The Hunger Games: Sunrise on the Reaping",
+            "Context": "Haymitch's Quarter Quell experience and aftermath. Directed by Francis Lawrence. Starring Joseph Zada and Mckenna Grace. In theaters 11/20.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/6c5/3a6/ad61e22713df51061f663624fd36c9a84d-sunrise-reaping.jpg",
+            "Price": 10
+        },
+        {
+            "id": "rec0RYCD73ZnSm9tl",
+            "Movie": "Clarissa",
+            "Name": "Clarissa",
+            "Context": "Mrs. Dalloway,' set in Lago. Directed by Arie Esiri and Chuko Esiri. Starring Sophie Okonedo and Ayo Edebiri. In theaters 12/11.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/e87/c08/f414898a5c791c23212fd77a243f56e1c2-clarissa.jpg",
+            "Price": 10
+        },
+        {
+            "id": "rec7WsREUdiGpSTcw",
+            "Movie": "Wildwood",
+            "Name": "Wildwood",
+            "Context": "In the latest from Laika, a girl travels to the enchanted woods outside Portland to rescue her kidnapped baby brother. Directed by Travis Knight. Starring Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan, and Mahershala Ali. In theaters 10/23.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/1ce/645/9de2f0afd1707fcf271dff828256ce01c2-wildwood.jpg",
+            "Price": 10
+        },
+        {
+            "id": "recbXXJ6na1eezbYF",
+            "Movie": "Sense and Sensibility",
+            "Name": "Sense and Sensibility",
+            "Context": "One sister has common sense, the other is overcome by emotions (sensibility). How will they find love and keep a roof over their heads? Directed by Georgia Oakley. Starring Daisy Edgar-Jones and Esmé Creed-Miles. In theaters 10/16. ",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/44e/b1c/2b64d7dfa9bb2e6ce87ceb3a6549fa9134-sense-sensibilty.jpg",
+            "Price": 10
+        },
+        {
+            "id": "recHHDGUvfrG1dWSj",
+            "Movie": "Jumanji: Open World",
+            "Name": "Jumanji: Open World",
+            "Context": "The video game 'Jumanji' breaks into the real world. Directed by Jake Kasdan. Starring Dwayne Johnson, Jack Black, Kevin Hart, Karen Gillan. In theaters 12/25.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/eff/1c6/58bc36b05d0474304b28433c8ad0a597d2-MFL-TK-poster.png",
+            "Price": 8
+        },
+        {
+            "id": "recI86rhlfPVhc4Jl",
+            "Movie": "Josephine",
+            "Name": "Josephine",
+            "Context": "Eight-year-old Josephine witnesses a brutal assault and struggles to process it. Directed by Beth de Araújo. Starring Mason Reeves, Channing Tatum, Gemma Chan. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/fd4/0b9/22a223c919c4d5970097cb647d43a10437-josephine.jpg",
+            "Price": 8
+        },
+        {
+            "id": "reciOPr0ojJiVlJWE",
+            "Movie": "Other Mommy",
+            "Name": "Other Mommy",
+            "Context": "A girl is both comforted and terrified by her \"Other Mommy.\" Directed by Rob Savage. Starring Jessica Chastain. In theaters 10/9.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/762/218/6f7d2a3f991268e3d11affa519cd4f1297-other-mommy.jpg",
+            "Price": 8
+        },
+        {
+            "id": "reculqjDrxHUGT8gw",
+            "Movie": "Misty Green",
+            "Name": "Misty Green",
+            "Context": "Washed-up actress Misty Green eyes a comeback. Directed by Chris Rock. Starring Rosalind Eleazar, Adam Driver, Daniel Kaluuya. Release date TBA October.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/bfb/a4d/1b0fad6cff01c184ff5a65693a0a9ab105-misty-green.jpg",
+            "Price": 8
+        },
+        {
+            "id": "recvjEMd96Yy5bRu7",
+            "Movie": "Street Fighter",
+            "Name": "Street Fighter",
+            "Context": "Chun-Li recruites Ken and Ryu for a dangerous fighting tournament, trying to stop M. Bison. Directed by Kitao Sakurai. Starring Andrew Koji, Noah Centineo, David Dastmalchian. In theaters 10/16.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/438/e18/438708fda85ea56502c991260d246ecaef-street-fighter.jpg",
+            "Price": 8
+        },
+        {
+            "id": "recAWHLXWLaioV3hG",
+            "Movie": "Being Heumann",
+            "Name": "Being Heumann",
+            "Context": "The story of Judy Heumann leading San Francisco's 504 sit-ins, a landmark protest for disability rights. Directed by Sian Heder. Starring Ruth Madeley, Dylan O'Brien, Mark Ruffalo. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/ecd/29d/5abf3607e0c570b3eb288bf33d74fc726e-being-heumann.jpg",
+            "Price": 8
+        },
+        {
+            "id": "recO1vYwWA4umstJM",
+            "Movie": "Club Kid",
+            "Name": "Club Kid",
+            "Context": "A queer party promoter finds out he has a son. Directd by Jordan Firstman. Starring Jordan Firstman, Diego Calva, Cara Delevingne. In theaters 11/6.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/daf/e73/a8d1b07ae9531ef05e12b54e1bf6f62501-club-kid.jpg",
+            "Price": 8
+        },
+        {
+            "id": "recOdVoepwYEzxIGU",
+            "Movie": "Bunker",
+            "Name": "Bunker",
+            "Context": "When an architect agrees to build a tech billionaire's bunker, it causes his wife to question their marriage. Directed by Florian Zeller. Starring Javier Bardem and Penélope Cruz.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/eff/1c6/58bc36b05d0474304b28433c8ad0a597d2-MFL-TK-poster.png",
+            "Price": 8
+        },
+        {
+            "id": "recZEqqlJqymmU3zq",
+            "Movie": "The Only Living Pickpocket in New York",
+            "Name": "The Only Living Pickpocket in New York",
+            "Context": "A veteran pickpocket makes the wrong lift, running afoul of a crime family. Directed by Noah Segan. Starring John Turturro, Giancarlo Esposito, Tatiana Maslany. In theaters 10/16.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/2f7/060/43f768c95df14b85a9cad4874cf6b73693-only-pickpocket.jpg",
+            "Price": 8
+        },
+        {
+            "id": "rec4EMgEZFSRFnC0P",
+            "Movie": "Gentle Monster",
+            "Name": "Gentle Monster",
+            "Context": "Women contend with the secrets the men they love keep. Directed by Marie Kreutzer. Starring Lea Seydoux, Catherine Deneuve. In limited release 10/30.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/b59/7ba/e85f81c3df93c1cbcaab1f4febb5f194b4-gentle-monster.jpg",
+            "Price": 8
+        },
+        {
+            "id": "recEJceBtqhSpQJKr",
+            "Movie": "Zero A.D.",
+            "Name": "Zero A.D.",
+            "Context": "Joseph and Mary protect baby Jesus from King Herod. Directed by Alejandro Monteverde. Starring Deva Cassel, Jamie Ward, Sam Worthington, Ben Mendelsohn, Gael García Bernal, Jim Caviezel. In theaters 12/25.  ",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/022/275/d6a550829cb44324b70fdfbc397ecd1c8d-0-ad-.jpg",
+            "Price": 5
+        },
+        {
+            "id": "recJJtfb8d05aAEeO",
+            "Movie": "Klara and the Sun",
+            "Name": "Klara and the Sun",
+            "Context": "An outdated robot friend tries to help the family that bought her. Directed by Taika Waititi. Starring Jenna Ortega, Amy Adams, Natasha Lyonne. In theaters 10/23.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/0e0/2bc/9a43b7aa22dabe9aa7bf56e6b7262840fc-klara-sun.jpg",
+            "Price": 5
+        },
+        {
+            "id": "recJkDXHutFWBkK8F",
+            "Movie": "Heartland",
+            "Name": "Heartland",
+            "Context": "A former country star searches Nashville's dark underbelly for her missing niece. Directed by Shana Feste. Starring Jessica Chastain, John Hawkes, Garrett Hedlund. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/ade/199/6134a81e71261cbb91c2c7e10a41716b06-heartland.jpg",
+            "Price": 5
+        },
+        {
+            "id": "recdWWz6TPUOSMuyz",
+            "Movie": "Matchbox: The Movie",
+            "Name": "Matchbox: The Movie",
+            "Context": "The latest Mattel film. A former soldier and his friends must drive cross-country to clear their names of a crime they didn’t commit. Directed by Sam Hargrave. Starring John Cena, Jessica Biel. In theaters 10/9.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/256/194/5869a1dbe8572bfd0538ed2bd1a7dad74e-matchbox.jpg",
+            "Price": 5
+        },
+        {
+            "id": "reciA451UrgJE3uwu",
+            "Movie": "I Play Rocky",
+            "Name": "I Play Rocky",
+            "Context": "Sylvester Stallone's journey to playing Rocky. Directed by Peter Farrelly. Starring Anthony Ippolito, Stephan James, AnnaSophia Robb, Matt Dillon. In theaters 11/13.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/e48/c2d/7d8b49f447f39958f6b177f6f54e3acdc0-play-rocky.jpg",
+            "Price": 5
+        },
+        {
+            "id": "recjdTA9x3lwNKg8i",
+            "Movie": "The Liberation",
+            "Name": "The Liberation",
+            "Context": "Based on director Guy Nattiv’s grandmother’s life, two daughters try to extract their mother from an all-woman cult.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/eff/1c6/58bc36b05d0474304b28433c8ad0a597d2-MFL-TK-poster.png",
+            "Price": 5
+        },
+        {
+            "id": "recjoNTQgisGXxADN",
+            "Movie": "Bucking Fastard",
+            "Name": "Bucking Fastard",
+            "Context": "Sisters Jean and Joan Holbrooke start digging through a mountain range in search of a land where true love is possible. Directed by Werner Herzog. Starring Rooney Mara, Kate Mara. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/a61/317/6870d46fd3c3b7e201bacdd63aa39c81c3-bucking-fastard.jpg",
+            "Price": 5
+        },
+        {
+            "id": "recnHeb1EoxDcjEjp",
+            "Movie": "Rose",
+            "Name": "Rose",
+            "Context": "An AFAB soldier claims to be the missing heir of a neglected estate. Directed by Markus Schleinzer. Starring Sandra Hüller. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/1ef/208/3d4fbe997fbe350771ad7adc81230515d2-rose-.jpg",
+            "Price": 5
+        },
+        {
+            "id": "recpuBH2ox2IaR6ZH",
+            "Movie": "Minotaur",
+            "Name": "Minotaur",
+            "Context": "An executive's tightly controlled life unravels when he discovers his wife is having an affair. Directed by Andrey Zvyagintsev. Starring Dmitriy Mazurov, Iris Lebedeva, Boris Kudrin. In theaters 11/20.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/1ba/343/7b39f74e2b83143396c6d664ee3d9cccbd-minotaur.jpg",
+            "Price": 5
+        },
+        {
+            "id": "recxvLINdbum58eNB",
+            "Movie": "How to Rob a Bank",
+            "Name": "How to Rob a Bank",
+            "Context": "Bank robbers post their heists for clout. Directed by David Leitch. Starring Nicholas Hoult, Zoë Kravitz, Pete Davidson, Anna Sawai, Christian Slater. In theaters 11/13.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/936/f4a/9735062cc56ebc4d4a487f3e8867274b60-how-rob-bank.jpg",
+            "Price": 5
+        },
+        {
+            "id": "recypbcS7TMc37f79",
+            "Movie": "Coward",
+            "Name": "Coward",
+            "Context": "Belgian soldiers put on a show in the trenches of WWI. Directed by Lukas Dhont. Starring Valentin Campagne, Emmanuel Macchia, Willem De Schryver. In theaters 12/25.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/2f3/d3f/8fcdc14ee264f9175a07d39a26a6d3e674-coward.jpg",
+            "Price": 5
+        },
+        {
+            "id": "reczk4p0VfG5c1Gn8",
+            "Movie": "Whalefall",
+            "Name": "Whalefall",
+            "Context": "A scuba diver is swallowed by a whale. He has one hour of oxygen left in his tank. Directed by Brian Duffield. Starring Austin Abrams, Josh Brolin, Elisabeth Shue. In theaters 10/16.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/a39/1a8/96bd82b9183a4e56df74c66fec1f14dba6-whalefall.jpg",
+            "Price": 5
+        },
+        {
+            "id": "reczs4T3qo8meS0mA",
+            "Movie": "Prima Facie",
+            "Name": "Prima Facie",
+            "Context": "A defense lawyer is sexually assaulted by her co-worker. Directed by Susanna White. Starring Cynthia Erivo. Release date TBA September.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/5da/b84/a49bf4f19ce6abd1380a2027bbc9195d60-prima-facie.jpg",
+            "Price": 5
+        },
+        {
+            "id": "recAsUdiU2tF3ND7O",
+            "Movie": "Violent Night 2",
+            "Name": "Violent Night 2",
+            "Context": "The real, hyperviolent Santa Claus, has to ‘Die Hard’ his way out of a mall. Directed by Tommy Wirkola. Starring David Harbour and Kristen Bell. In theaters 12/4.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/52e/fe9/4da8639a203bdf7e79fe8956aaa0033169-violent-2.jpg",
+            "Price": 5
+        },
+        {
+            "id": "recUhFdEqtU5z66Ks",
+            "Movie": "Tender Loving Care",
+            "Name": "Tender Loving Care",
+            "Context": "Mike Leigh's last film, an exploration of contemporary life. Directed by Mike Leigh. Starring Marion Bailey, Kate O'Flynn. In theaters 12/4.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/4d5/736/f3b7b28791e0cb0acf9600091784f2aaeb-tender-loving.jpg",
+            "Price": 5
+        },
+        {
+            "id": "recXS0yvxMRotDQA7",
+            "Movie": "Ray Gunn",
+            "Name": "Ray Gunn",
+            "Context": "Ray Gunn is the last human PI in a world of robots and aliens. Directed by Brad Bird. Starring Sam Rockwell, Scarlett Johansson. In theaters 12/18.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/70f/f9c/4f69f2a746ff30a901bd3ff890c8f3309d-ray-gunn.jpg",
+            "Price": 5
+        },
+        {
+            "id": "rec2OpCqieE7QSbFw",
+            "Movie": "Tenzing",
+            "Name": "Tenzing",
+            "Context": "How Tenzing Norgay and Edmund Hillary reached the top of Mount Everest together. Directed by Jennifer Peedom. Starring Genden Phuntsok and Tom Hiddleston. In theaters 10/9.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/0ba/169/ea591b0fc5c2ce745d003be2b93c8aff09-tenzing.jpg",
+            "Price": 5
+        },
+        {
+            "id": "rec3XKYfnd0U0ThF0",
+            "Movie": "The Cat in the Hat",
+            "Name": "The Cat in the Hat",
+            "Context": "A CGI take on Dr. Seuss's classic. Directed by Alessandro Carloni and Erica Rivinoja. Voiced by Bill Hader, Quinta Brunson, America Ferrera. In theaters 11/6.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/13c/7a7/2adacaacfdeaa40af64d116a3ccb73061e-cat-hat.jpg",
+            "Price": 5
+        },
+        {
+            "id": "rec3C4UM5SLDuqGge",
+            "Movie": "Bitter Christmas",
+            "Name": "Bitter Christmas",
+            "Context": "A woman works on a screenplay at Christmas, and reality keeps invading the text. Directed by Pedro Almodòvar. Starring Bárbara Lennie, Leonardo Sbaraglia, Milena Smit, Patrick Cirado. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/a9b/9b6/1b7bb5c8c46977f94f2718ce2baa038379-bitter-christmas.jpg",
+            "Price": 5
+        },
+        {
+            "id": "rec59zMqhHrqnRgll",
+            "Movie": "The Angry Birds Movie 3",
+            "Name": "The Angry Birds Movie 3",
+            "Context": "Red, now a father, must save the world yet again. Directed by John Rice. Voiced by Jason Sudeikis, Rachel Bloom, Josh Gad. In theaters 12/23.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/a04/150/d2463172d345864dc04d12d6fc539ddd13-angry-birds-3.jpg",
+            "Price": 5
+        },
+        {
+            "id": "rec6MyXHkpEaf0NC5",
+            "Movie": "The Mosquito Bowl",
+            "Name": "The Mosquito Bowl",
+            "Context": "Enlisted football players play one last game before entering WWII's Pacific Theater. Directed by Peter Berg. Starring Bill Skarsgård, Nicholas Galitzine. In theaters 10/30.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/da8/56f/e4c9e876adee7da4c1a08304a794e79970-mosquito-bowl.jpg",
+            "Price": 5
+        },
+        {
+            "id": "rec7RWmhqJYIB2D5s",
+            "Movie": "A Talent for Murder",
+            "Name": "A Talent for Murder",
+            "Context": "A man is sent to try and get Patricia Highsmith to write one more Ripley book. Directed by Anton Corbijn. Starring Alden Ehrenreich, Helen Mirren, Olivia Cooke. In theaters 10/23.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/3a4/3c4/be4c9bcd76ed9c537dc93200b02882b116-talent-murder.jpg",
+            "Price": 5
+        },
+        {
+            "id": "rec94WlG6oto6Ca2F",
+            "Movie": "Mr. Irrelevant: The John Tuggle Story",
+            "Name": "Mr. Irrelevant: The John Tuggle Story",
+            "Context": "The New York Giants take John Tuggle as the last pick of the 1983 NFL draft. Directed by Jonathan Levine. Starring David Corenswet, Isabel May, Michael Shannon. In theaters 12/25.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/0c7/6ad/c64eb18627a20f0efddc1fdfc4314c89a8-mr-irrelevant.jpg",
+            "Price": 5
+        },
+        {
+            "id": "recynYSdxTBglZA8F",
+            "Movie": "A Statement",
+            "Name": "A Statement",
+            "Context": "Based on the book Losing Earth, 20 experts gather to figure out how to stop climate change. In 1980. How'd they do? Directed by Tom McCarthy. Starring Paul Rudd, Paul Giamatti, and Tatiana Maslany. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/b6b/593/056979595ff414b24d1ec561943ef57f9d-statement.jpg",
+            "Price": 5
+        },
+        {
+            "id": "rec4HTsDbqZpFhbxI",
+            "Movie": "Animals",
+            "Name": "Animals",
+            "Context": "The son of a Los Angeles mayoral candidate is kidnapped, and the family scrambles to pay the ransom.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/caf/418/25a2a25fb45bbffc5f9c385edfd7e1d0ce-animals.jpg",
+            "Price": 5
+        },
+        {
+            "id": "rechezAMPUXKT8GXH",
+            "Movie": "Closing Night",
+            "Name": "Closing Night",
+            "Context": "A celebrated actress’ life begins to unravel as her estranged family stages a reunion while she’s starring in Mother Courage on Broadway. Directed by Cody Fern. Starring Sarah Paulson, Naomi Watts, Dianne Wiest, and Odessa A’zion. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/eff/1c6/58bc36b05d0474304b28433c8ad0a597d2-MFL-TK-poster.png",
+            "Price": 5
+        },
+        {
+            "id": "recjzShqbg1Q7qTM7",
+            "Movie": "NAZA",
+            "Name": "NAZA",
+            "Context": "Filmed at night from Tel Aviv rooftops, this investigative documentary examines the civilian casualties of Israel’s military operations in Gaza and the systems behind targeted killings of Palestinians.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/69a/2a8/d0f06c2d952750ed0ccd58a417b7b1157e-naza-.jpg",
+            "Price": 5
+        },
+        {
+            "id": "recGQqmdAWheOLxuB",
+            "Movie": "Way of the Warrior Kid",
+            "Name": "Way of the Warrior Kid",
+            "Context": "A bullied 11-year-old is mentored by his Navy SEAL uncle. Directed by McG. Starring Chris Pratt, Jude Hill, Linda Cardellini. In theaters 11/20.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/a15/210/d7722b774f4bcb8363824077526a9ad8e5-warrior-kid.jpg",
+            "Price": 3
+        },
+        {
+            "id": "recCFHQMBiiOgg8TI",
+            "Movie": "Everest: The Other Side",
+            "Name": "Everest: The Other Side",
+            "Context": "Ski mountaineers take on Everest's North Face. Directed by Jimmy Chin and Elizabeth Chai Vasarhelyi. Releases 10/30.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/ee4/762/13c51ad94d9d11b884f8b86e7f09d6ec5e-everest-other.jpg",
+            "Price": 3
+        },
+        {
+            "id": "recKejpeM9tH1XRjI",
+            "Movie": "Queen at Sea",
+            "Name": "Queen at Sea",
+            "Context": "A woman and her stepfather struggle to care for her mother with dementia. Directed by Lance Hammer. Starring Juliette Binoche, Tom Courtenay. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/b38/dec/4d26ab4a626da702cbd92597f2996fbd84-queen-at-sea.jpg",
+            "Price": 3
+        },
+        {
+            "id": "recdVy1orJk1Tj5xb",
+            "Movie": "Musk",
+            "Name": "Musk",
+            "Context": "An exposé of trillionaire Elon Musk. Directed by Alex Gibney. Releases 10/23.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/32e/8dc/22fcfa9eb70d6f357b0f7a6b7daf3e2da5-musk-.jpg",
+            "Price": 3
+        },
+        {
+            "id": "recejaImzL5CM4Al4",
+            "Movie": "The Man I Love",
+            "Name": "The Man I Love",
+            "Context": "An artist in 1980s New York lives defiantly with AIDS. Directed by Ira Sachs. Starring Rami Malek, Rebecca Hall, Ebon Moss-Bachrach. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/657/e39/74992bf68ae80dc7b3c7afcfa09c745702-man-love.jpg",
+            "Price": 3
+        },
+        {
+            "id": "rechhz1c1XSlrKNcY",
+            "Movie": "The Unknown",
+            "Name": "The Unknown",
+            "Context": "Homebody David finds his life upended when he swaps bodies with last night's hookup. Directed by Arthur Harari. Starring Léa Seydoux, Niels Schneider. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/bc0/0c4/028861c3fc648c4f2f0990195df422ef2f-unknown.jpg",
+            "Price": 3
+        },
+        {
+            "id": "recp1qDJMe121zmrT",
+            "Movie": "The Housewife",
+            "Name": "The Housewife",
+            "Context": "A New York Times journalist befriends the wife of a suspected former Nazi secretly living in Queens. Directed by Benjamin Shirinian. Starring Naomi Watts, Luke Evans, Michael Imperioli, Tye Sheridan. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/eff/1c6/58bc36b05d0474304b28433c8ad0a597d2-MFL-TK-poster.png",
+            "Price": 3
+        },
+        {
+            "id": "rectriGUZAtk1Wtia",
+            "Movie": "Ghost Soldier",
+            "Name": "Ghost Soldier",
+            "Context": "A former Green Beret protects his neighbors from private equity. Directed by William Eubank. Starring Jim Caviezel, Olivia Thirlby. In theaters 11/6.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/8a2/06d/9d3fa084a0cdf759a9f8ddcf57432b2ab3-ghost-soldier.jpg",
+            "Price": 3
+        },
+        {
+            "id": "recAa4FOhenJ6y4Io",
+            "Movie": "The Boy in the Iron Box",
+            "Name": "The Boy in the Iron Box",
+            "Context": "A plane of mercenaries crashes on a snowy mountain, where they find a mazelike fortress. Directed by David Prior. Starring Rupert Friend, Kevin Durand, Jaeden Martel. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/eff/1c6/58bc36b05d0474304b28433c8ad0a597d2-MFL-TK-poster.png",
+            "Price": 3
+        },
+        {
+            "id": "recUX8jEkaKMKKtqL",
+            "Movie": "Onwards and Sideways",
+            "Name": "Onwards and Sideways",
+            "Context": "A schoolteacher and composer form an unlikely friendship after being diagnosed with Parkinson's on the same day. Directed by John Madden. Starring Laura Linney, Rhys Ifans. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/2db/0be/47df600236e825a9e40b8823fc26d7debd-onwards-sideways.jpg",
+            "Price": 3
+        },
+        {
+            "id": "recW5M90SNwWO9WaD",
+            "Movie": "Wicker",
+            "Name": "Wicker",
+            "Context": "A fisherwoman asks a basket weaver to weave her a husband. Directed by Eleanor Wilson and Alex Huston. Starring Olivia Colman, Alexander Skarsgård, Peter Dinklage, Elizabeth Debicki. In theaters 10/23.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/749/a57/36a9f65fb255cea10a46774b0851683e9f-wicker.jpg",
+            "Price": 3
+        },
+        {
+            "id": "recYcbxHduKqHWRp9",
+            "Movie": "Ramayana",
+            "Name": "Ramayana",
+            "Context": "Part 1 of the dramatization of the Hindu epic poem. King Rama must rescue his kidnapped wife, Sita. Directed by Nitesh Tiwari. Starring Ranbir Kapoor, Yash, Sai Pallavi. Release date TBA November.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/41f/717/1d39ecb78be6655eda2fd59c13ceef154e-ramayana.jpg",
+            "Price": 3
+        },
+        {
+            "id": "rec4NW8fwxNoUUy2q",
+            "Movie": "A Long Winter",
+            "Name": "A Long Winter",
+            "Context": "A family prepares for winter in the high mountains. Directed by Andrew Haigh. Starring Ebon Moss-Bachrach, Catriona Balfe, Fred Hechinger. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/7ff/8d1/e659ee538a903f322c9786fac4019e2f2d-long-winter.jpg",
+            "Price": 3
+        },
+        {
+            "id": "rec5tgLcLPrnwEupi",
+            "Movie": "Alpha Gang",
+            "Name": "Alpha Gang",
+            "Context": "An alien invasion is stymied when the invaders fall prey to our human emotions. Directed by David and Nathan Zellner. Starring Cate Blanchett, Dave Bautista, Lily-Rose Depp. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/eff/1c6/58bc36b05d0474304b28433c8ad0a597d2-MFL-TK-poster.png",
+            "Price": 3
+        },
+        {
+            "id": "recc9qvyyRbkO2GHW",
+            "Movie": "Look Back",
+            "Name": "Look Back",
+            "Context": "Two students bond over their love of creating manga. Directed by Hirokazu Kore-eda. Starring Natsuki Deguchi, Aju Makita. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/e79/3b0/6df87147c6b52da2a9928daf01184a377c-look-back.jpg",
+            "Price": 3
+        },
+        {
+            "id": "reccFusyTrsHm48E5",
+            "Movie": "Famous",
+            "Name": "Famous",
+            "Context": "A man who is identical toa famous movie star uses the resemblance to pursue his dreams.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/eff/1c6/58bc36b05d0474304b28433c8ad0a597d2-MFL-TK-poster.png",
+            "Price": 3
+        },
+        {
+            "id": "reccWcvlgf9yD3iCw",
+            "Movie": "Crawlers",
+            "Name": "Crawlers",
+            "Context": "An apartment building faces an invasion of venomous spiders. Directed by Àngel Gómez Hernández. Starring Matilda Lutz, Gregg Sulkin, and Melina Matthews. In theaters 10/16.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/569/1ca/638b5fb0132f4a3fa632cce3fc89e2f4b7-crawlers.jpg",
+            "Price": 3
+        },
+        {
+            "id": "recxulQYRClL7WEJE",
+            "Movie": "The Gallerist",
+            "Name": "The Gallerist",
+            "Context": "A desperate gallerist tries to pass off a dead body as conceptual art. Directed by Cathy Yan. Starring Natalie Portman, Jenna Ortega, and Sterling K. Brown. In theaters 12/4.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/1c4/ab9/21f261d341f56201d2856ad94bd9d0dcaa-gallerist.jpg",
+            "Price": 3
+        },
+        {
+            "id": "recNHi3EJiB4WbnJO",
+            "Movie": "Christmas at the Kringles",
+            "Name": "Christmas at the Kringles",
+            "Context": "A family moves to a neighborhood where you will keep the Christmas spirit all year ‘round …or else. Directed by Kevin Lewis. Starring Ron Livingston, Rachel Bilson, and Thomas Lennon. In theaters 10/30.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/fff/2c7/33d97ded7e12e0bbb9c257e7bd77512c6c-xmas-kringle.jpg",
+            "Price": 3
+        },
+        {
+            "id": "recZO9qhqqBRxKYmX",
+            "Movie": "Drummer Boy",
+            "Name": "Drummer Boy",
+            "Context": "Angel Studios’ action-musical about two brothers on opposite sides of the American Revolution. Directed by Ben Smallbone. Starring Christian Pop duo For King and Country. In theaters 11/6.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/f5b/1a1/4e39afabfa6d49c7ac4da8d2c8c3d76547-drummer-boy.jpg",
+            "Price": 3
+        },
+        {
+            "id": "rec4aRivzbG4NlgYo",
+            "Movie": "Above the Below",
+            "Name": "Above the Below",
+            "Context": "Three astronauts struggle to survive when their reentry capsule unexpectedly lands in the ocean. Directed by Idris Elba and Martin Owen. Starring Elba, Caitlin FitzGerald and Hero Fiennes Tiffin. Releases 12/3.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/eff/1c6/58bc36b05d0474304b28433c8ad0a597d2-MFL-TK-poster.png",
+            "Price": 3
+        },
+        {
+            "id": "recKNXCmrQniijSaf",
+            "Movie": "You Can See Everything",
+            "Name": "You Can See Everything",
+            "Context": "Nathan Fielder interviews Theranos scammer Elizabeth Holmes as she prepares to go to prison. Normal things surely ensue.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/a74/fee/c3dc13375c26322fc6cfc0cc448171cd14-see-everything.jpg",
+            "Price": 3
+        },
+        {
+            "id": "recAK7z8G0gjSG5kG",
+            "Movie": "Woman Unknown",
+            "Name": "Woman Unknown",
+            "Context": "A former housekeeper plans an extravagant party for her engagement to the household’s patriarch. As preparations unfold, hidden aspects of her past begin to surface.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/12f/0b7/7bbbdb96e900fb2d69ce34a09f06978e83-womanunknown.jpg",
+            "Price": 3
+        },
+        {
+            "id": "recakBIMuz3GxnJ1M",
+            "Movie": "La Gradiva",
+            "Name": "La Gradiva",
+            "Context": "A class of French high-school seniors study art history and are messy as heck on a trip to Pompeii.",
+            "Price": 3
+        },
+        {
+            "id": "recdiPjhkJHoH2Abo",
+            "Movie": "My Undesireable Friends Part II - Exile",
+            "Name": "My Undesireable Friends Part II - Exile",
+            "Context": "Several Russian journalists flee their country and contend with the Russo-Ukrainian War. Directed by Julia Loktev. Release date TBA November.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/3aa/b0f/2fd9c86670f995ccb06fefd8de70c3ee58-undesirable-friends.jpg",
+            "Price": 2
+        },
+        {
+            "id": "recdl7DTqOXU5RcAA",
+            "Movie": "14th",
+            "Name": "14th",
+            "Context": "Ava DuVernay's documentary about the 14th Amendment, i.e., birthright citizenship. Directed by Ava Duvernay. Release date 12/4/26.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/c8a/3ca/fb357c819f88c38fc5cf3f2ba8153023c6-14th-.jpg",
+            "Price": 2
+        },
+        {
+            "id": "recqzudWgbXHw26fS",
+            "Movie": "Free Leonard Peltier",
+            "Name": "Free Leonard Peltier",
+            "Context": "Profiles Native American activist Leonard Peltier, who was imprisoned for 49 years. Directed by Jesse Short Bull and David France. Releases 10/12.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/efc/977/a44e92b2215dc6c0333ceb048973a24697-free-leonard.jpg",
+            "Price": 2
+        },
+        {
+            "id": "recsBKlkTvzseLXGv",
+            "Movie": "Nuisance Bear",
+            "Name": "Nuisance Bear",
+            "Context": "What happens when a polar bear's migration path takes it through a town? Directed by Gabriela Osio Vanden and Jack Weisman. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/2ea/a0d/e2a6fec319844ea66cb405aebdaab2c1db-nuisance-bear.jpg",
+            "Price": 2
+        },
+        {
+            "id": "recxmtK69sYt9EdGl",
+            "Movie": "One in a Million",
+            "Name": "One in a Million",
+            "Context": "Follows one girl over ten years as she travels between Syria and Germany. Directed by Itab Azzam and Jack MacInnes. Releases 10/21.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/83c/32e/f04afba7e87d97f045e4e8863d21d76ac0-1-million.jpg",
+            "Price": 2
+        },
+        {
+            "id": "recAsi4WvHdSz7ttc",
+            "Movie": "Soul Patrol",
+            "Name": "Soul Patrol",
+            "Context": "The Army's first Black spec-ops team reflects on fighting in the Vietnam War. Directed by J.M. Harper. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/eff/1c6/58bc36b05d0474304b28433c8ad0a597d2-MFL-TK-poster.png",
+            "Price": 2
+        },
+        {
+            "id": "rec1lTURDzPXM2sRZ",
+            "Movie": "Poetic License",
+            "Name": "Poetic License",
+            "Context": "Two best friends pursue the same MILF in their college poetry class. Directed by Maude Apatow. Starring Andrew Barth Feldman, Cooper Hoffman, Leslie Mann. Releases 10/16.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/919/ba7/17560a8f876dc84fcad375082495b65af7-poetic-license.jpg",
+            "Price": 2
+        },
+        {
+            "id": "rec8Y8gwXnen34Zj5",
+            "Movie": "Jimmy",
+            "Name": "Jimmy",
+            "Context": "Jimmy Stewart fights for the right to fight in WW2. Directed by Aaron Burns. Starring KJ Apa, Rob Riggle. In theaters 11/6.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/939/1f0/3c6e11330ecc251e4a84c3b50301adff82-jimmy.jpg",
+            "Price": 2
+        },
+        {
+            "id": "recJkMP3ejasaRvd6",
+            "Movie": "Iron Boy",
+            "Name": "Iron Boy",
+            "Context": "A French animated film about a 10-year-old farmboy forced to wear an orthopedic brace. Directed by Louis Clichy. Voiced by Jean-Pascal Zadi, Alexandre Astier, and Rod Paradot. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/8e1/94f/25b910a40a3a3ca13ac0c0677835f0b0fa-iron-boy.jpg",
+            "Price": 2
+        },
+        {
+            "id": "recjzIgzxN1RSGlON",
+            "Movie": "Tangles",
+            "Name": "Tangles",
+            "Context": "A young woman returns to her conservative small town to take care of her mother with Alzheimer's in this animated autobiographical film. Directed by Leah Nelson. Voiced by Abbi Jacobson, Julia Louis-Dreyfus, and Bryan Cranston. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/c52/4d9/353351f04157eded887d8d521604a31ada-tangles.jpg",
+            "Price": 2
+        },
+        {
+            "id": "recNSQ0bz2IklDAvV",
+            "Movie": "In Waves",
+            "Name": "In Waves",
+            "Context": "Based on the graphic novel by AJ Dungo. A romance between a surfer and a skater is disrupted by sudden illness. Directed by Phuong Mai Nguyen. English voices by Will Sharpe and Stephanie Hsu. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/1a2/726/9cee277e39b685afbd45acb76b6c6b63e6-in-waves.jpg",
+            "Price": 2
+        },
+        {
+            "id": "rectINrwVYw6tkGr8",
+            "Movie": "Ali G: Who Iz I?",
+            "Name": "Ali G: Who Iz I?",
+            "Context": "Sacha Baron Cohen is making people uncomfortable again.",
+            "Price": 2
+        },
+        {
+            "id": "recMqogUSGwP2kPO5",
+            "Movie": "Hershey",
+            "Name": "Hershey",
+            "Context": "The romance behind the invention of the Hershey's Kiss. Directed by Mark Waters. Starring Finn Wittrock and Alexandra Daddario. In theaters 11/25.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/228/541/3a0812c780b70c1e34c6758f2aab44a81d-hershey.jpg",
+            "Price": 1
+        },
+        {
+            "id": "receWOgAln4EnTKGI",
+            "Movie": "To Hold a Mountain",
+            "Name": "To Hold a Mountain",
+            "Context": "A mother-daughter shepherd team defend their land from NATO training exercises. Directed by Petar Glomazić and Biljana Tutorov. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/9b7/c53/3fdc7c04df064e62b6dc6a95644ad5cbd8-hold-mountain.jpg",
+            "Price": 1
+        },
+        {
+            "id": "recsATEGDSpgDSM0a",
+            "Movie": "A Fox Under a Pink Moon",
+            "Name": "A Fox Under a Pink Moon",
+            "Context": "16-year-old Afghan artist Soraya documents her attempts to flee Iran for Austria, as well as the art she makes in that time. Directed by Soraya Akhlaghi and Mehrdad Oskouei. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/f05/20b/3c72cbd90c9a86c9ed39a1eeffd11c45e4-fox-moon.jpg",
+            "Price": 1
+        },
+        {
+            "id": "recCGZw8a7yOn8b1K",
+            "Movie": "Jane Elliott Against the World",
+            "Name": "Jane Elliott Against the World",
+            "Context": "Documentary about the teacher who developed the eye-color discrimination lesson. Directed by Judd Ehrlich. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/4cc/984/dc4951c08c5fbf9fa6b484d99d502d6121-jane-elliott.jpg",
+            "Price": 1
+        },
+        {
+            "id": "recOc4CHCQEZQs6GL",
+            "Movie": "Once Upon a Time in Harlem",
+            "Name": "Once Upon a Time in Harlem",
+            "Context": "Looking back at a 1972 party at Duke Ellington's house with the last living members of the Harlem Renaissance. Directed by William and David Greaves. Releases 10/16.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/7b1/9e4/1fa0aac0a460b37922cb4557f0d9c30773-ouati-harlem.jpg",
+            "Price": 1
+        },
+        {
+            "id": "recQCBjC6Ga5qWK0X",
+            "Movie": "Tutu",
+            "Name": "Tutu",
+            "Context": "A documentary about Bishop Desmond Tutu. Directed by Sam Pollard. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/eff/1c6/58bc36b05d0474304b28433c8ad0a597d2-MFL-TK-poster.png",
+            "Price": 1
+        },
+        {
+            "id": "recWMq6lsQdJw7l76",
+            "Movie": "Closure",
+            "Name": "Closure",
+            "Context": "Polish documentary about a father's search for his son, who may have jumped to his death into the Vistula River. Directed by Michal Marczak. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/f63/690/fc7160c996b9de46511941eef56f639527-closure.jpg",
+            "Price": 1
+        },
+        {
+            "id": "recZaVMhx2yaOp2Dh",
+            "Movie": "Madden",
+            "Name": "Madden",
+            "Context": "Biopic of NFL legend John Madden. Directed by David O. Russell. Starring Nicolas Cage, Christian Bale, Kathryn Hahn, John Mulaney, Sienna Miller. In theaters 11/26.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/c30/d57/b77aec268ee27d0572a8fdf04253171f65-madden.jpg",
+            "Price": 1
+        },
+        {
+            "id": "recow3jUQW36pFzEF",
+            "Movie": "Rehearsals for a Revolution",
+            "Name": "Rehearsals for a Revolution",
+            "Context": "A documentary about the 40 years of history from the Iranian revolution to President Trump's war in Iran. Directed by Pegah Ahangarani. Release date TBA.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/fdb/dda/fe741e3cb75b32c3514467532bdc12e740-rehearsals-rev.jpg",
+            "Price": 1
+        },
+        {
+            "id": "recSvgt49Yd74sfOf",
+            "Movie": "Union Town",
+            "Name": "Union Town",
+            "Context": "Three separate but interconnected labor stories, focusing on delivery workers for Amazon and UPS.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/eff/1c6/58bc36b05d0474304b28433c8ad0a597d2-MFL-TK-poster.png",
+            "Price": 1
+        },
+        {
+            "id": "rechzp0VsnAeD9LkL",
+            "Movie": "Terrestrial",
+            "Name": "Terrestrial",
+            "Context": "During a weekend reunion, a rising sci-fi author welcomes three college friends to his home, but strange events begin to blur the lines between reality and imagination.",
+            "Poster Image": "https://pyxis.nymag.com/v1/imgs/87d/2c2/7e98f51ee9176e9ca5fb5abc6a28327d7c-terrestrial-poster.jpg",
+            "Price": 1
+        }
+    ]
+}
