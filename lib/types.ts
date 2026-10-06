@@ -16,3 +16,12 @@ export type Player = {
 };
 
 export type SearchPlayer = Pick<Player, "displayName" | "score">;
+
+export type ScoredMovie = {
+  title: string;
+  score: number | null;
+};
+
+export type ScoredPlayer = Omit<Player, "movies"> & {
+  movies: ScoredMovie[];
+};

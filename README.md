@@ -18,6 +18,21 @@ Saved players live in the shareable `?users=NameOne,NameTwo` URL parameter. Addi
 
 On touch devices, pulling down from the top of the dashboard forces a fresh server-side leaderboard download and updates the saved player cards without reloading the page.
 
+## Movie Score Inference
+
+Vulture's leaderboard exposes each player's selected movies and total score, but not the point value of each movie. MFL Dashboard derives those values mathematically: every roster supplies an equation of the form `movie1 + movie2 + … + movie8 = player score`, and thousands of distinct rosters form a system of equations.
+
+The server-side inference module:
+
+1. Seeds every movie on a zero-point roster with a score of zero.
+2. Repeatedly propagates known values through equations containing one unknown movie.
+3. Uses row reduction to accept only uniquely identifiable remaining values.
+4. Accepts only non-negative, effectively integer results.
+5. Reconstructs player totals to validate the inferred mapping.
+6. Leaves genuinely ambiguous movie scores unknown instead of guessing.
+
+Inferred movie scores are derived data; Vulture's player total remains authoritative. The inference reuses the already-cached leaderboard and is cached for the same leaderboard version, so it does not make an additional Vulture request. Development diagnostics are available from `/api/debug/movie-scores`.
+
 ## Local development
 
 ```bash

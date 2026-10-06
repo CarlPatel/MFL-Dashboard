@@ -1,6 +1,7 @@
 import "server-only";
 
-import type { Player, SearchPlayer, VulturePlayer } from "./types";
+import { getCachedMovieScores } from "./movieScores";
+import type { Player, ScoredPlayer, SearchPlayer, VulturePlayer } from "./types";
 
 const LEADERBOARD_URL =
   "https://www.vulture.com/static/leaderboard/production/cmuec30my000h3b7egrtm2p6h.json";
@@ -26,6 +27,30 @@ const CACHE_TTL_MS = 60 * 60 * 1000;
 let memoryCache: CacheEntry | null = null;
 let inFlightRequest: Promise<Leaderboard> | null = null;
 
+function parseMovies(value: string): string[] {
+  const movies: string[] = [];
+  let current = "";
+  let quoted = false;
+  for (let index = 0; index < value.length; index += 1) {
+    const character = value[index];
+    if (character === '"') {
+      if (quoted && value[index + 1] === '"') {
+        current += '"';
+        index += 1;
+      } else {
+        quoted = !quoted;
+      }
+    } else if (character === "," && !quoted) {
+      if (current.trim()) movies.push(current.trim());
+      current = "";
+    } else {
+      current += character;
+    }
+  }
+  if (current.trim()) movies.push(current.trim());
+  return movies;
+}
+
 function normalizePlayer(value: unknown): Player | null {
   if (!value || typeof value !== "object") return null;
   const raw = value as VulturePlayer;
@@ -44,7 +69,7 @@ function normalizePlayer(value: unknown): Player | null {
         : null,
     movies:
       typeof raw.movies === "string"
-        ? raw.movies.split(",").map((movie) => movie.trim()).filter(Boolean)
+        ? parseMovies(raw.movies)
         : [],
   };
 }
@@ -118,17 +143,23 @@ export async function searchPlayers(query: string, limit = 10): Promise<{ result
   };
 }
 
-export async function getPlayers(usernames: string[]): Promise<{ users: Player[]; missing: string[]; fetchedAt: string }> {
+export async function getPlayers(usernames: string[]): Promise<{ users: ScoredPlayer[]; missing: string[]; fetchedAt: string }> {
   const leaderboard = await getLeaderboard();
+  const inference = getCachedMovieScores(leaderboard.players, leaderboard.fetchedAt);
   const lookup = new Map(
     leaderboard.players.map((player) => [player.displayName.toLocaleLowerCase(), player]),
   );
-  const users: Player[] = [];
+  const users: ScoredPlayer[] = [];
   const missing: string[] = [];
 
   for (const username of usernames) {
     const player = lookup.get(username.toLocaleLowerCase());
-    if (player) users.push(player);
+    if (player) {
+      users.push({
+        ...player,
+        movies: player.movies.map((title) => ({ title, score: inference.scores.get(title) ?? null })),
+      });
+    }
     else missing.push(username);
   }
 

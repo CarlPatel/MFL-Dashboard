@@ -28,6 +28,12 @@ h1 { margin:0; max-width:560px; font-family:ui-serif,Georgia,serif; font-size:cl
 .result-details h3,.card-details h3 { margin:0 0 10px; font-size:.82rem; letter-spacing:.04em; text-transform:uppercase; }
 ul { margin:0; padding-left:1.2rem; }
 li { margin:0 0 8px; line-height:1.38; }
+.movie-list { list-style:none; padding:0; }
+.movie-list li { display:flex; align-items:baseline; justify-content:space-between; gap:18px; }
+.movie-list li span { min-width:0; }
+.movie-list li strong { color:var(--muted); font-size:.82rem; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.movie-total { display:flex; align-items:center; justify-content:space-between; gap:18px; margin-top:14px; padding-top:13px; border-top:1px solid var(--line); font-size:.86rem; }
+.movie-total strong { font-variant-numeric:tabular-nums; }
 .primary-button,.remove-button { min-height:44px; border-radius:12px; cursor:pointer; font-weight:700; }
 .primary-button { width:100%; margin-top:12px; border:0; background:var(--accent); color:var(--accentText); }
 .primary-button:disabled { opacity:.5; cursor:default; }

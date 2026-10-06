@@ -1,9 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import type { Player } from "../lib/types";
+import type { ScoredPlayer } from "../lib/types";
 
-export default function PlayerCard({ player, onRemove }: { player: Player; onRemove: (name: string) => void }) {
+function pointLabel(score: number) {
+  return `${score.toLocaleString()} ${score === 1 ? "pt" : "pts"}`;
+}
+
+export default function PlayerCard({ player, onRemove }: { player: ScoredPlayer; onRemove: (name: string) => void }) {
   const [expanded, setExpanded] = useState(false);
   const contentId = `player-${player.displayName.replace(/[^a-z0-9]/gi, "-")}`;
 
@@ -20,7 +24,16 @@ export default function PlayerCard({ player, onRemove }: { player: Player; onRem
         <div className="card-details" id={contentId}>
           {player.leagueName && <p className="league">{player.leagueName}</p>}
           <h3>Movies</h3>
-          {player.movies.length ? <ul>{player.movies.map((movie) => <li key={movie}>{movie}</li>)}</ul> : <p className="muted">No movies listed.</p>}
+          {player.movies.length ? (
+            <ul className="movie-list">
+              {player.movies.map((movie) => (
+                <li key={movie.title}><span>{movie.title}</span><strong>{movie.score === null ? "—" : pointLabel(movie.score)}</strong></li>
+              ))}
+            </ul>
+          ) : <p className="muted">No movies listed.</p>}
+          {player.movies.length > 0 && player.movies.every((movie) => movie.score !== null) && (
+            <div className="movie-total"><span>Movie total</span><strong>{pointLabel(player.movies.reduce((sum, movie) => sum + (movie.score ?? 0), 0))}</strong></div>
+          )}
           <button className="remove-button" onClick={() => onRemove(player.displayName)}>Remove from dashboard</button>
         </div>
       )}

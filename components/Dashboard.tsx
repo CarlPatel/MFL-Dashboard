@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
-import type { Player } from "../lib/types";
+import type { ScoredPlayer } from "../lib/types";
 import PlayerCard from "./PlayerCard";
 import PlayerSearch from "./PlayerSearch";
 
@@ -21,7 +21,7 @@ export default function Dashboard() {
   const urlUsers = searchParams.get("users");
   const initialized = useRef(false);
   const [savedUsers, setSavedUsers] = useState<string[]>([]);
-  const [players, setPlayers] = useState<Map<string, Player>>(new Map());
+  const [players, setPlayers] = useState<Map<string, ScoredPlayer>>(new Map());
   const [missing, setMissing] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
@@ -30,7 +30,7 @@ export default function Dashboard() {
   const [fetchedAt, setFetchedAt] = useState<string | null>(null);
   const pullStartY = useRef<number | null>(null);
 
-  const applyPlayersResponse = useCallback((data: { users?: Player[]; missing?: string[]; fetchedAt?: string }) => {
+  const applyPlayersResponse = useCallback((data: { users?: ScoredPlayer[]; missing?: string[]; fetchedAt?: string }) => {
     setPlayers(new Map((data.users ?? []).map((player) => [player.displayName.toLocaleLowerCase(), player])));
     setMissing(Array.isArray(data.missing) ? data.missing : []);
     setFetchedAt(typeof data.fetchedAt === "string" ? data.fetchedAt : null);
