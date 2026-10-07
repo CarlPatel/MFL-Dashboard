@@ -21,6 +21,7 @@ export default function Dashboard() {
   const searchParams = useSearchParams();
   const urlUsers = searchParams.get("users");
   const initialized = useRef(false);
+  const [hydrated, setHydrated] = useState(false);
   const [savedUsers, setSavedUsers] = useState<string[]>([]);
   const [players, setPlayers] = useState<Map<string, ScoredPlayer>>(new Map());
   const [missing, setMissing] = useState<string[]>([]);
@@ -49,6 +50,7 @@ export default function Dashboard() {
     initialized.current = true;
     if (urlUsers !== null) {
       setSavedUsers(uniqueNames(urlUsers.split(",")));
+      setHydrated(true);
       return;
     }
     try {
@@ -60,11 +62,13 @@ export default function Dashboard() {
       }
     } catch {
       localStorage.removeItem(STORAGE_KEY);
+    } finally {
+      setHydrated(true);
     }
   }, [urlUsers, writeUrl]);
 
   useEffect(() => {
-    if (!initialized.current) return;
+    if (!hydrated) return;
     localStorage.setItem(STORAGE_KEY, JSON.stringify(savedUsers));
     if (!savedUsers.length) {
       setPlayers(new Map());
@@ -90,7 +94,7 @@ export default function Dashboard() {
         if (!controller.signal.aborted) setLoading(false);
       });
     return () => controller.abort();
-  }, [applyPlayersResponse, savedUsers]);
+  }, [applyPlayersResponse, hydrated, savedUsers]);
 
   const refreshPlayers = useCallback(async () => {
     if (!savedUsers.length || refreshing) return;
