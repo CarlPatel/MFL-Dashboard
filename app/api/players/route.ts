@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { getPlayers, LeaderboardError, refreshLeaderboard } from "../../../lib/vulture";
+import { getPlayers, LeaderboardError } from "../../../lib/vulture";
 
 export async function GET(request: NextRequest) {
   const users = Array.from(
@@ -19,9 +19,6 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    if (request.nextUrl.searchParams.get("refresh") === "1") {
-      await refreshLeaderboard();
-    }
     return NextResponse.json(await getPlayers(users));
   } catch (error) {
     console.error("Failed to load players", error);

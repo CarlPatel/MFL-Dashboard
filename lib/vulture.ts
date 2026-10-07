@@ -124,12 +124,6 @@ export async function getLeaderboard(): Promise<Leaderboard> {
   return inFlightRequest;
 }
 
-export async function refreshLeaderboard(): Promise<Leaderboard> {
-  memoryCache = null;
-  inFlightRequest = null;
-  return getLeaderboard();
-}
-
 export async function searchPlayers(query: string, limit = 10): Promise<{ results: SearchPlayer[]; fetchedAt: string }> {
   const normalizedQuery = query.trim().toLocaleLowerCase();
   if (normalizedQuery.length < 2) return { results: [], fetchedAt: new Date().toISOString() };

@@ -97,7 +97,7 @@ export default function Dashboard() {
     setRefreshing(true);
     setError(null);
     try {
-      const response = await fetch(`/api/players?users=${encodeURIComponent(savedUsers.join(","))}&refresh=1`, {
+      const response = await fetch(`/api/players?users=${encodeURIComponent(savedUsers.join(","))}`, {
         cache: "no-store",
       });
       const data = await response.json();

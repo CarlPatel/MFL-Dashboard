@@ -16,7 +16,7 @@ Because this is an undocumented external dependency, its URL or response shape m
 
 Saved players live in the shareable `?users=NameOne,NameTwo` URL parameter. Adding or removing a player updates that URL without a reload. The same list is stored in `localStorage`; when a URL does not include `users`, the saved browser list is restored.
 
-On touch devices, pulling down from the top of the dashboard forces a fresh server-side leaderboard download and updates the saved player cards without reloading the page.
+On touch devices, pulling down from the top updates saved player cards from the server without reloading the page. The server's one-hour leaderboard TTL still applies, so this interaction never bypasses the Vulture cache.
 
 ## Movie Score Inference
 
