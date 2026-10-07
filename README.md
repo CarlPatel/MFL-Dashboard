@@ -33,6 +33,8 @@ The server-side inference module:
 
 Inferred movie scores are derived data; Vulture's player total remains authoritative. The inference reuses the already-cached leaderboard and is cached for the same leaderboard version, so it does not make an additional Vulture request. Development diagnostics are available from `/api/debug/movie-scores`.
 
+The Movies page starts with every record in `app/movies/original-data.json`, including names, draft prices, posters, and tie-break order, then adds any leaderboard title missing from that file. Inferred leaderboard scores are overlaid by exact title. Missing posters use Vulture's default MFL artwork, and missing prices remain unknown. The fully sorted catalog is cached against the leaderboard's retrieval timestamp and is rebuilt only when the one-hour leaderboard cache produces a new version.
+
 ## Local development
 
 ```bash

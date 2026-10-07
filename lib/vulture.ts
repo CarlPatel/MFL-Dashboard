@@ -1,7 +1,7 @@
 import "server-only";
 
 import { getCachedMovieScores } from "./movieScores";
-import { MOVIE_METADATA, ORIGINAL_MOVIE_ORDER } from "./moviePrices";
+import { DEFAULT_POSTER_URL, MOVIE_METADATA, ORIGINAL_MOVIE_ORDER } from "./moviePrices";
 import type { MovieCatalogItem, Player, ScoredPlayer, SearchPlayer, VulturePlayer } from "./types";
 
 const LEADERBOARD_URL =
@@ -27,6 +27,7 @@ type CacheEntry = Leaderboard & { expiresAt: number };
 const CACHE_TTL_MS = 60 * 60 * 1000;
 let memoryCache: CacheEntry | null = null;
 let inFlightRequest: Promise<Leaderboard> | null = null;
+let movieCatalogCache: { leaderboardVersion: string; movies: MovieCatalogItem[] } | null = null;
 
 function parseMovies(value: string): string[] {
   const movies: string[] = [];
@@ -155,7 +156,7 @@ export async function getPlayers(usernames: string[]): Promise<{ users: ScoredPl
         movies: player.movies.map((title) => ({
           title,
           score: inference.scores.get(title) ?? null,
-          posterUrl: MOVIE_METADATA.get(title)?.posterUrl ?? null,
+          posterUrl: MOVIE_METADATA.get(title)?.posterUrl ?? DEFAULT_POSTER_URL,
         })),
       });
     }
@@ -167,13 +168,24 @@ export async function getPlayers(usernames: string[]): Promise<{ users: ScoredPl
 
 export async function getMovieCatalog(): Promise<{ movies: MovieCatalogItem[]; fetchedAt: string }> {
   const leaderboard = await getLeaderboard();
+  if (movieCatalogCache?.leaderboardVersion === leaderboard.fetchedAt) {
+    return { movies: movieCatalogCache.movies, fetchedAt: leaderboard.fetchedAt };
+  }
+
   const inference = getCachedMovieScores(leaderboard.players, leaderboard.fetchedAt);
-  const movies = ORIGINAL_MOVIE_ORDER.map((movie) => ({
-    title: movie.title,
-    score: inference.scores.get(movie.title) ?? null,
-    price: movie.price,
-    posterUrl: movie.posterUrl,
-  })).sort((left, right) => {
+  const catalogTitles = Array.from(new Set([
+    ...ORIGINAL_MOVIE_ORDER.map((movie) => movie.title),
+    ...inference.scores.keys(),
+  ]));
+  const movies = catalogTitles.map((title) => {
+    const metadata = MOVIE_METADATA.get(title);
+    return {
+      title,
+      score: inference.scores.get(title) ?? null,
+      price: metadata?.price ?? null,
+      posterUrl: metadata?.posterUrl ?? DEFAULT_POSTER_URL,
+    };
+  }).sort((left, right) => {
     if (left.score === null && right.score !== null) return 1;
     if (left.score !== null && right.score === null) return -1;
     if (left.score !== right.score) return (right.score ?? 0) - (left.score ?? 0);
@@ -181,5 +193,7 @@ export async function getMovieCatalog(): Promise<{ movies: MovieCatalogItem[]; f
     const rightOrder = MOVIE_METADATA.get(right.title)?.tieBreakOrder ?? Number.MAX_SAFE_INTEGER;
     return leftOrder - rightOrder || left.title.localeCompare(right.title);
   });
+
+  movieCatalogCache = { leaderboardVersion: leaderboard.fetchedAt, movies };
   return { movies, fetchedAt: leaderboard.fetchedAt };
 }

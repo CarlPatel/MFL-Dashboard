@@ -7,6 +7,9 @@ export type MovieMetadata = {
   tieBreakOrder: number;
 };
 
+export const DEFAULT_POSTER_URL =
+  "https://pyxis.nymag.com/v1/imgs/eff/1c6/58bc36b05d0474304b28433c8ad0a597d2-MFL-TK-poster.png";
+
 type OriginalMovie = {
   Movie?: unknown;
   Price?: unknown;
@@ -23,7 +26,7 @@ for (const [tieBreakOrder, rawMovie] of (originalData.movies as OriginalMovie[])
     price: rawMovie.Price,
     posterUrl: typeof rawMovie["Poster Image"] === "string" && rawMovie["Poster Image"].trim()
       ? rawMovie["Poster Image"].trim()
-      : null,
+      : DEFAULT_POSTER_URL,
     tieBreakOrder,
   });
 }
