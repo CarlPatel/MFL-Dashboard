@@ -167,8 +167,10 @@ export default function Dashboard() {
         {refreshing ? "Refreshing leaderboard…" : pullDistance >= 64 ? "Release to refresh" : "Pull to refresh"}
       </div>
       <header className="header">
-        <Link className="view-toggle" href="/movies">Movies</Link>
-        <p className="eyebrow">Vulture</p>
+        <div className="header-top">
+          <p className="eyebrow">Vulture</p>
+          <Link className="view-toggle" href="/movies">Movies</Link>
+        </div>
         <h1>Movies Fantasy League</h1>
         {fetchedAt && <p className="updated">Leaderboard refreshed {new Date(fetchedAt).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}</p>}
       </header>

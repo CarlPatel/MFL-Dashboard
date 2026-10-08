@@ -15,8 +15,10 @@ export default async function MoviesPage() {
   return (
     <main className="shell">
       <header className="header">
-        <Link className="view-toggle" href="/">Dashboard</Link>
-        <p className="eyebrow">Vulture</p>
+        <div className="header-top">
+          <p className="eyebrow">Vulture</p>
+          <Link className="view-toggle" href="/">Dashboard</Link>
+        </div>
         <h1>Movie Scores</h1>
         <p className="updated">Leaderboard refreshed {new Date(fetchedAt).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/New_York" })}</p>
       </header>
