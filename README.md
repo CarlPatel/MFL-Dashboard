@@ -2,6 +2,35 @@
 
 MFL Dashboard is a mobile-first Next.js application for following players and movie scores in Vulture's Movies Fantasy League. It provides searchable player profiles, shareable saved dashboards, and a complete view of the original movie draft pool.
 
+<table align="center">
+  <tr>
+    <td width="33%" align="center">
+      <img
+        src="screenshots/users.png"
+        alt="Users Screen"
+        width="90%"
+        style="border-radius: 40px; border: 2px solid #ddd;"
+      />
+    </td>
+    <td width="33%" align="center">
+      <img
+        src="screenshots/user_movies.png"
+        alt="User Movies Screen"
+        width="90%"
+        style="border-radius: 40px; border: 2px solid #ddd;"
+      />
+    </td>
+    <td width="33%" align="center">
+      <img
+        src="screenshots/movies.png"
+        alt="Movies Screen"
+        width="90%"
+        style="border-radius: 40px; border: 2px solid #ddd;"
+      />
+    </td>
+  </tr>
+</table>
+
 ## Vulture Leaderboard Data
 
 The application retrieves Vulture's full leaderboard JSON on the server. It validates and normalizes player names, rankings, total scores, leagues, and selected movies before making that data available to the rest of the application.
